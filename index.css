@@ -60,7 +60,6 @@ html {
 body {
   font-family: 'Cutive Mono', Courier New, Courier, monospace;
   font-size: 14px;
-  animation: distort 2s linear infinite;
 }
 
 h1 {
@@ -88,7 +87,7 @@ a {
 }
 
 section {
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
   padding: 1rem 0;
   word-break: break-all;
 }
@@ -98,11 +97,15 @@ section {
 }
 
 .highlight--one {
-  color: #006eff;
+  color: cyan;
 }
 
 .highlight--two {
   color: magenta;
+}
+
+.highlight--three {
+  color: #ddd;
 }
 
 .text--medium {
