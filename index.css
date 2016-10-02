@@ -99,6 +99,9 @@ section {
 
 .portfolio-site {
   padding: 0.6rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 1.6rem;
 }
 
 .highlight--one {
