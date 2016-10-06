@@ -3,6 +3,7 @@
   'use strict';
 
   var config = {
+    version: '1.0.0',
     staticCacheItems: [
       'index.css',
       'site-icon-2.png',
