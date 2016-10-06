@@ -101,6 +101,8 @@
     }
 
     function addToCache(cacheKey, request, response) {
+      console.log(`Adding resource to cache: ${request}`)
+
       if (response.ok) {
         var copy = response.clone();
         caches.open(cacheKey).then(cache => {
@@ -111,6 +113,8 @@
     }
 
     function fetchFromCache(event) {
+      console.log(`Fetching resource from cache: ${event.request}`)
+
       return caches.match(event.request).then(response => {
         if (!response) {
           // A synchronous error that will kick off the catch handler
@@ -121,6 +125,8 @@
     }
 
     function offlineResponse(resourceType, opts) {
+      console.log(`Offline response`)
+
       if (resourceType === 'image') {
         return new Response(opts.offlineImage,
           { headers: { 'Content-Type': 'image/svg+xml' } }
