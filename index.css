@@ -59,7 +59,7 @@ html {
 
 body {
   font-family: 'Cutive Mono', Courier New, Courier, monospace;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 h1 {
@@ -88,7 +88,7 @@ a {
 
 p {
   margin: .3rem 0;
-  line-height: 1.1rem;
+  line-height: 1.2;
 }
 
 section {
