@@ -2,6 +2,7 @@
   "short_name": "Adam Murray | Portfolio",
   "description": "Adam Murray's Portfolio",
   "name": "Adam Murray | Portfolio",
+  "gcm_sender_id": "660128692933",
   "icons": [
     {
       "src": "me_pixel.png",

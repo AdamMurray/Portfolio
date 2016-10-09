@@ -167,7 +167,7 @@
     event.waitUntil(
       self.registration.showNotification(title, {
         'body': 'The Message',
-        'icon': 'me_pixel.jpg'
+        'icon': 'me_pixel.png'
       }));
   });
 
