@@ -4,34 +4,34 @@
   "name": "Adam Murray | Portfolio",
   "icons": [
     {
-      "src": "me_pixel.jpg",
+      "src": "me_pixel.png",
       "sizes": "36x36",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "me_pixel.jpg",
+      "src": "me_pixel.png",
       "sizes": "48x48",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "me_pixel.jpg",
+      "src": "me_pixel.png",
       "sizes": "72x72",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "me_pixel.jpg",
+      "src": "me_pixel.png",
       "sizes": "128x128",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "me_pixel.jpg",
+      "src": "me_pixel.png",
       "sizes": "192x192",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "me_pixel.jpg",
+      "src": "me_pixel.png",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ],
   "start_url": "index.html",
