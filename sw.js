@@ -9,7 +9,7 @@
     version: '1.0.0',
     staticCacheItems: [
       'index.css',
-      'site-icon-2.png',
+      'me_pixel.png',
       'index.js',
       'index.html',
       'manifest.json'
