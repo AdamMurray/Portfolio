@@ -37,6 +37,7 @@
 
     event.waitUntil(
       onInstall(event, config)
+        .then(() => self.skipWaiting())
     );
   });
 
