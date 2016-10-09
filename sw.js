@@ -2,6 +2,9 @@
 
   'use strict';
 
+  /**
+   * Service worker configuration
+   */
   var config = {
     version: '1.0.0',
     staticCacheItems: [
@@ -12,14 +15,17 @@
       'manifest.json'
     ],
     offlineImage: '<svg role="img" aria-labelledby="offline-title"'
-      + ' viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">'
-      + '<title id="offline-title">Offline</title>'
-      + '<g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/>'
-      + '<text fill="#9B9B9B" font-family="Times New Roman,Times,serif" font-size="72" font-weight="bold">'
-      + '<tspan x="93" y="172">offline</tspan></text></g></svg>',
+    + ' viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">'
+    + '<title id="offline-title">Offline</title>'
+    + '<g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/>'
+    + '<text fill="#9B9B9B" font-family="Times New Roman,Times,serif" font-size="72" font-weight="bold">'
+    + '<tspan x="93" y="172">offline</tspan></text></g></svg>',
     offlinePage: 'index.html'
   };
 
+  /**
+   * Service worker install event
+   */
   self.addEventListener('install', event => {
     // Do install stuff
     function onInstall(event, opts) {
@@ -34,11 +40,17 @@
     );
   });
 
+  /**
+   * Service worker activate event
+   */
   self.addEventListener('activate', event => {
     // Do activate stuff
     console.log('activated');
   });
 
+  /**
+   * Service worker fetch event
+   */
   self.addEventListener('fetch', event => {
 
     function shouldHandleFetch(event, opts) {
@@ -142,6 +154,21 @@
       onFetch(event, config);
     }
 
+  });
+
+  /**
+   * Service worker push event
+   */
+  self.addEventListener('push', function (event) {
+    console.log('Push message', event);
+
+    var title = 'Push message';
+
+    event.waitUntil(
+      self.registration.showNotification(title, {
+        'body': 'The Message',
+        'icon': 'me_pixel.jpg'
+      }));
   });
 
 })();
