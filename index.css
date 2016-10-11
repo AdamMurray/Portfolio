@@ -53,8 +53,8 @@ table {
 /* ======================================================== */
 
 html {
-  background: #111;
-  color: #00f300;
+  background: #1c212d;
+  color: #77DD77;
 }
 
 body {
@@ -113,7 +113,7 @@ section {
 }
 
 .highlight--three {
-  color: #ddd;
+  color: #efefef;
 }
 
 .highlight--four {
