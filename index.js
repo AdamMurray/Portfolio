@@ -26,14 +26,14 @@
       });
   }
 
-  subscribeButton.addEventListener('click', () => {
-    if (isSubscribed) {
-      unsubscribe();
-    }
-    else {
-      subscribe();
-    }
-  });
+  // subscribeButton.addEventListener('click', () => {
+  //   if (isSubscribed) {
+  //     unsubscribe();
+  //   }
+  //   else {
+  //     subscribe();
+  //   }
+  // });
 
   function subscribe() {
     reg.pushManager
