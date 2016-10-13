@@ -8,7 +8,7 @@
   var reg;
   var sub;
   var isSubscribed = false;
-  var subscribeButton = document.getElementById('subscribeButton');
+  // var subscribeButton = document.getElementById('subscribeButton');
 
   // Register service worker
   if ('serviceWorker' in navigator) {
@@ -18,7 +18,7 @@
       })
       .then((serviceWorkerRegistration) => {
         reg = serviceWorkerRegistration;
-        subscribeButton.disabled = false;
+        // subscribeButton.disabled = false;
         console.log('Service Worker is ready :', reg);
       })
       .catch((error) => {
@@ -41,7 +41,7 @@
       .then((pushSubscription) => {
         sub = pushSubscription;
         console.log('Subscribed! Endpoint:', sub.endpoint);
-        subscribeButton.textContent = 'Unsubscribe';
+        // subscribeButton.textContent = 'Unsubscribe';
         isSubscribed = true;
       });
   }
@@ -49,13 +49,13 @@
   function unsubscribe() {
     sub.unsubscribe()
       .then((event) => {
-        subscribeButton.textContent = 'Subscribe';
+        // subscribeButton.textContent = 'Subscribe';
         console.log('Unsubscribed!', event);
         isSubscribed = false;
       })
       .catch((error) => {
         console.log('Error unsubscribing', error);
-        subscribeButton.textContent = 'Subscribe';
+        // subscribeButton.textContent = 'Subscribe';
       });
   }
 
