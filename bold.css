@@ -1,0 +1,210 @@
+/* Colours
+ * ======================================= */
+/* Colours Map
+ * ======================================= */
+body {
+  background-color: #eeede9;
+}
+
+.line-break {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/*
+ * Card
+ */
+.card {
+  color: #fff;
+  height: 480px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px 20px !important;
+  overflow: hidden;
+}
+
+.card__heading {
+  font-size: 39px;
+  font-family: 'Rubik One';
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card__sub-heading {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Anonymous Pro';
+  text-transform: uppercase;
+}
+
+.card__panel {
+  width: 200%;
+  height: 100%;
+  margin-top: 40%;
+  margin-left: -50%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.card--pink {
+  background: -webkit-linear-gradient(325deg, #C42277, #ff2284);
+  background: linear-gradient(125deg, #C42277, #ff2284);
+  color: #EEC612;
+}
+
+.card--pink .card__heading {
+  color: #EEC612;
+  text-shadow: 6px 5px 0px rgb(196, 34, 119);
+}
+
+.card--pink .card__sub-heading {
+  color: #EEC612;
+}
+
+.card--pink .card__panel {
+  background-color: #C42277;
+}
+
+.card--pink .line-break {
+  background-color: #EEC612;
+}
+
+.card--indigo {
+  background: -webkit-linear-gradient(325deg, #0c0c88, #2A2A6A);
+  background: linear-gradient(125deg, #0c0c88, #2A2A6A);
+  color: #DC4588;
+}
+
+.card--indigo .card__heading {
+  color: #DC4588;
+  text-shadow: 6px 5px 0px rgb(2, 0, 1);
+}
+
+.card--indigo .card__sub-heading {
+  color: #DC4588;
+}
+
+.card--indigo .card__panel {
+  background-color: #2A2A6A;
+}
+
+.card--indigo .line-break {
+  background-color: #DC4588;
+}
+
+.card--orange {
+  background: -webkit-linear-gradient(325deg, #ff9e27, #ED9C39);
+  background: linear-gradient(125deg, #ff9e27, #ED9C39);
+  color: #187443;
+}
+
+.card--orange .card__heading {
+  color: #187443;
+  text-shadow: 6px 5px 0px rgb(2, 0, 1);
+}
+
+.card--orange .card__sub-heading {
+  color: #187443;
+}
+
+.card--orange .card__panel {
+  background-color: #ED9C39;
+}
+
+.card--orange .line-break {
+  background-color: #187443;
+}
+
+.card--green {
+  background: -webkit-linear-gradient(325deg, #008c41, #187443);
+  background: linear-gradient(125deg, #008c41, #187443);
+  color: #ED9C39;
+}
+
+.card--green .card__heading {
+  color: #ED9C39;
+  text-shadow: 6px 5px 0px rgb(24, 116, 67);
+}
+
+.card--green .card__sub-heading {
+  color: #ED9C39;
+}
+
+.card--green .card__panel {
+  background-color: #187443;
+}
+
+.card--green .line-break {
+  background-color: #ED9C39;
+}
+
+.card--teal {
+  background: -webkit-linear-gradient(325deg, #00aab2, #238A8F);
+  background: linear-gradient(125deg, #00aab2, #238A8F);
+  color: #EEC612;
+}
+
+.card--teal .card__heading {
+  color: #EEC612;
+  text-shadow: 6px 5px 0px rgb(35, 138, 143);
+}
+
+.card--teal .card__sub-heading {
+  color: #EEC612;
+}
+
+.card--teal .card__panel {
+  background-color: #238A8F;
+}
+
+.card--teal .line-break {
+  background-color: #EEC612;
+}
+
+.card--yellow {
+  background: -webkit-linear-gradient(325deg, #ffd101, #EEC612);
+  background: linear-gradient(125deg, #ffd101, #EEC612);
+  color: #238A8F;
+}
+
+.card--yellow .card__heading {
+  color: #238A8F;
+  text-shadow: 6px 5px 0px rgb(238, 198, 18);
+}
+
+.card--yellow .card__sub-heading {
+  color: #238A8F;
+}
+
+.card--yellow .card__panel {
+  background-color: #EEC612;
+}
+
+.card--yellow .line-break {
+  background-color: #238A8F;
+}
+
+.card--grey {
+  background: -webkit-linear-gradient(325deg, #eae0ba, #d8d5cc);
+  background: linear-gradient(125deg, #eae0ba, #d8d5cc);
+  color: #222;
+}
+
+.card--grey .card__heading {
+  color: #222;
+  text-shadow: 6px 5px 0px rgb(2, 0, 1);
+}
+
+.card--grey .card__sub-heading {
+  color: #222;
+}
+
+.card--grey .card__panel {
+  background-color: #d8d5cc;
+}
+
+.card--grey .line-break {
+  background-color: #222;
+}
