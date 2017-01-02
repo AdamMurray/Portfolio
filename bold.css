@@ -1,11 +1,11 @@
-/* Colours
- * ======================================= */
-/* Colours Map
- * ======================================= */
+
 body {
   background-color: #eeede9;
 }
 
+/*
+ * Line Break
+ */
 .line-break {
   width: 100%;
   height: 4px;
@@ -26,14 +26,14 @@ body {
 }
 
 .card__heading {
-  font-size: 39px;
+  font-size: 2.7em;
   font-family: 'Rubik One';
   text-transform: uppercase;
   color: #fff;
 }
 
 .card__sub-heading {
-  font-size: 18px;
+  font-size: 1.3em;
   font-weight: 300;
   font-family: 'Anonymous Pro';
   text-transform: uppercase;
@@ -208,3 +208,29 @@ body {
 .card--grey .line-break {
   background-color: #222;
 }
+
+/*
+ * Button
+ */
+.button {
+  font-size: 1.3em;
+  padding: .5em 1.5em;
+  background: #eec612;
+  border: none;
+  color: #0aa1a8;
+  font-family: 'Anonymous Pro';
+  text-transform: uppercase;
+  width: 80%;
+}
+/*
+.button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  border-radius: 4px;
+  background-color: yellow;
+}*/
