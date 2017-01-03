@@ -1,6 +1,20 @@
+html {
+  height: 100%;
+}
 
 body {
-  background-color: #eeede9;
+  background-color: #111 !important;
+  color: #eec612 !important;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Anonymous Pro' !important;
 }
 
 /*
@@ -26,14 +40,14 @@ body {
 }
 
 .card__heading {
-  font-size: 2.7em;
+  font-size: 3.7em;
   font-family: 'Rubik One';
   text-transform: uppercase;
   color: #fff;
 }
 
 .card__sub-heading {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 300;
   font-family: 'Anonymous Pro';
   text-transform: uppercase;
@@ -41,11 +55,20 @@ body {
 
 .card__panel {
   width: 200%;
+  position: absolute;
   height: 100%;
-  margin-top: 40%;
-  margin-left: -50%;
+  left: -25%;
+  top: 85%;
   -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  transform: rotate(20deg);
+  background: #111 !important;
+}
+
+@media (min-width: 600px) {
+  .card__panel {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
 }
 
 .card--pink {
@@ -222,15 +245,8 @@ body {
   text-transform: uppercase;
   width: 80%;
 }
-/*
-.button:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 4px;
-  border-radius: 4px;
-  background-color: yellow;
-}*/
+
+.max-width--standard {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
